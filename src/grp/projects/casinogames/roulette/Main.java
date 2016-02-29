@@ -18,7 +18,7 @@ public class Main {
 		System.out.println("Starting game");
 		
 		while(player.getTotalMoney()>0){
-			System.out.println("Spinning the wheel");
+			System.out.println("Spinning the wheel!");
 			System.out.println("No more bets please!");
 			Thread.sleep(5000);
 			Bin win = game.cycle(player);
