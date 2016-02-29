@@ -23,7 +23,7 @@ public class Main {
 			Thread.sleep(5000);
 			Bin win = game.cycle(player);
 			
-			System.out.println("Winning bets are: " + win.toString());
+			System.out.println("The winning bets are: " + win.toString());
 			
 			System.out.println("Player money: " + player.getTotalMoney());
 			System.out.println("Place your bets now!");
