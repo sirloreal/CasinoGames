@@ -25,7 +25,7 @@ public class Main {
 			
 			System.out.println("The winning bets are: " + win.toString());
 			
-			System.out.println("Player money: " + player.getTotalMoney());
+			System.out.println("Player's money: " + player.getTotalMoney());
 			System.out.println("Place your bets now!");
 			
 			Thread.sleep(5000); //Have a little sleep
