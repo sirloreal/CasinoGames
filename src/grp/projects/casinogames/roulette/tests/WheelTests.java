@@ -64,6 +64,15 @@ public class WheelTests {
 		
 	}
 	
+	/**
+	 * Testing the spinning of a wheel, with a seeded random number generator.
+	 * Using a known seed means we can predict the results
+	 * This generates the following 'random' numbers:
+	 * 25,18,17,21,0,24,10,14,28,18
+	 * In my opinion, we probably don't need to mock the random number
+	 * generator as it would require a further class that returns some
+	 * pre-determined list of values, which is what custom seeding does anyway.
+	 */
 	@Test
 	public void testWheelSpin() {
 		
@@ -81,8 +90,6 @@ public class WheelTests {
 				
 		//Create a wheel:
 		//Using a known seed means we can predict the results
-		//This generates the following 'random' numbers:
-		//25,18,17,21,0,24,10,14,28,18
 		Wheel wheel = new Wheel(new Random(1));
 		wheel.addOutcomeToBin(25, doubleZero);
 		wheel.addOutcomeToBin(18, twelve);
